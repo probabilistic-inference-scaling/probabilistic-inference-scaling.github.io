@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="ConceptFusion: Open-set Multimodal 3D Mapping">
+  <meta name="keywords" content="ConceptFusion, 3D Mapping, SLAM, Open-set, Multimodal, Foundation models, CLIP">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>ConceptFusion: Open-set Multimodal 3D Mapping</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JX0F75QDW"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -52,7 +52,7 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
+      <a class="navbar-item" href="https://concept-fusion.github.io">
       <span class="icon">
           <i class="fas fa-home"></i>
       </span>
@@ -60,20 +60,20 @@
 
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
-          More Research
+          Related Research
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
+          <a class="navbar-item" href="https://gradslam.github.io">
+            GradSLAM
           </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
+          <a class="navbar-item" href="https://mahis.life/clip-fields/">
+            CLIP-Fields
           </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
+          <a class="navbar-item" href="https://pengsongyou.github.io/openscene">
+            OpenScene
           </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
+          <a class="navbar-item" href="https://say-can.github.io/">
+            Say-Can
           </a>
         </div>
       </div>
@@ -88,40 +88,82 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
-          <div class="is-size-5 publication-authors">
+          <h1 class="title is-2 publication-title">ConceptFusion: Open-set Multimodal 3D Mapping</h1>
+          <h2 class="title is-6 publlication-title">Robotics: Science and Systems (RSS) 2023</h2>
+          <div class="is-size-6 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://krrish94.github.io">Krishna Murthy Jatavallabhula</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              <a href="https://www.alihkw.com/">Alihusein Kuwajerwala</a><sup>2</sup><sup>*</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              <a href="https://georgegu1997.github.io/">Qiao Gu</a><sup>3</sup><sup>*</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=jFH3ShsAAAAJ&hl=en">Mohd Omama</a><sup>4</sup><sup>*</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
+              <a href="https://taochenshh.github.io/">Tao Chen</a><sup>1</sup>,
+            </span>
+            <span>
+              <a href="https://www.csail.mit.edu/person/alaa-maalouf">Alaa Maalouf</a><sup>1</sup>
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
+              <a href="https://people.csail.mit.edu/lishuang/">Shuang Li</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="https://epiception.github.io/">Ganesh Iyer</a><sup>6</sup><sup><span>&#8224;</span></sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://saryazdi.github.io/">Soroush Saryazdi</a><sup>7</sup><sup><span>&#8224;</span></sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://nik-v9.github.io/">Nikhil Keetha</a><sup>5</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://ayushtewari.com/">Ayush Tewari</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://celsodemelo.net/">Celso Miguel de Melo</a><sup>8</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://robotics.iiit.ac.in/">Madhava Krishna</a><sup>4</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://liampaull.ca">Liam Paull</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://www.cs.toronto.edu/\~florian/">Florian Shkurti</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://groups.csail.mit.edu/vision/torralbalab/">Antonio Torralba</a><sup>1</sup>
             </span>
           </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>MIT,</span>
+            <span class="author-block"><sup>2</sup>Université de Montréal,</span>
+            <span class="author-block"><sup>3</sup>University of Toronto,</span>
+            <span class="author-block"><sup>4</sup>IIIT Hyderabad,</span>
+            <span class="author-block"><sup>5</sup>CMU,</span>
+            <span class="author-block"><sup>6</sup>Amazon,</span>
+            <span class="author-block"><sup>7</sup>Matician,</span>
+            <span class="author-block"><sup>8</sup>DEVCOM Army Research Laboratory</span>
+          </div>
+
+          <div class="is-size-7 publication-authors">
+            <span class="author-block"><sup>*</sup>Co-second authors</span>
+            <span class="author-block"><sup>&#8224;</sup>Work done prior to current affiliation</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="assets/pdf/2023-ConceptFusion.pdf"
+                   class="external-link button is-normal ">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
@@ -129,8 +171,8 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="https://arxiv.org/abs/2302.07241"
+                   class="external-link button is-normal ">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
@@ -139,8 +181,8 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="https://www.youtube.com/watch?v=rkXgws8fiDs"
+                   class="external-link button is-normal ">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
@@ -149,8 +191,8 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/concept-fusion/concept-fusion"
+                   class="external-link button is-normal ">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
@@ -159,8 +201,8 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="#"
+                   class="external-link button is-normal" disabled="true">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
@@ -178,14 +220,11 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%"> -->
+        <img source src="./static/images/splash.gif" />
+      <!-- </video> -->
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        <span class="coolname">ConceptFusion</span> builds open-set 3D maps that can be queried via text, click, image, or audio.
       </h2>
     </div>
   </div>
@@ -196,51 +235,75 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
+        <div class="item">
+          <video poster="" id="clustering" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/clustering.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
+        <div class="item">
+          <video poster="" id="roundabout-nav" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/roundabout nav.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
+        <div class="item">
+          <video poster="" id="tm-baymax" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/tm baymax.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
+        <div class="item">
+          <video poster="" id="text-query-somewhere-to-sit" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/text query somewhere to sit.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
+        <div class="item">
+          <video poster="" id="image-query-cabinet" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/image query cabinet.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
+        <div class="item">
+          <video poster="" id="audio-query-doorknock" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/audio query doorknock.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
+        <div class="item">
+          <video poster="" id="click-query-cabinet" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/click query cabinet.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
+        <div class="item">
+          <video poster="" id="clustering-outdoors" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/clustering outdoors.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="football-field-nav" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/football field nav.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="tm-caterpillar" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/tm caterpillar.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="tm-purple" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/tm purple.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="tm-spindrift" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/tm spindrift.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -252,54 +315,34 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
 
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/rkXgws8fiDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
     </div>
     <!--/ Paper video. -->
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Building 3D maps of the environment is central to robot navigation, planning, and interaction with objects in a scene. Most existing approaches that integrate semantic concepts with 3D maps largely remain confined to the closed-set setting: they can only reason about a finite set of concepts, pre-defined at training time. Further, these maps can only be queried using class labels, or in recent work, using text prompts.
+          </p>
+          <p>
+            We address both these issues with ConceptFusion, a scene representation that is: (i) fundamentally open-set, enabling reasoning beyond a closed set of concepts (ii) inherently multi-modal, enabling a diverse range of possible queries to the 3D map, from language, to images, to audio, to 3D geometry, all working in concert. ConceptFusion leverages the open-set capabilities of today’s foundation models pre-trained on internet-scale data to reason about concepts across modalities such as natural language, images, and audio. We demonstrate that pixel-aligned open-set features can be fused into 3D maps via traditional SLAM and multi-view fusion approaches. This enables effective zero-shot spatial reasoning, not needing any additional training or finetuning, and retains long-tailed concepts better than supervised approaches, outperforming them by more than 40% margin on 3D IoU. We extensively evaluate ConceptFusion on a number of real-world datasets, simulated home environments, a real-world tabletop manipulation task, and an autonomous driving platform. We showcase new avenues for blending foundation models with 3D open-set multimodal mapping.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
   </div>
 </section>
 
@@ -308,129 +351,233 @@
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3">Approach</h2>
 
         <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+        <h3 class="title is-4">Construct pixel-aligned features</h3>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            ConceptFusion constructs pixel-aligned features from off-the-shelf foundation models that can only produce a global (image-level) embedding vector. This is achieved by: processing input images to generate generic (class-agnostic) object masks and extracting a local features for each, computing a global feature for the input image as a whole, and fusing the region-specific features with global features using our proposed zero-shot pixel alignment technique.
           </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
+          <img src="./static/images/pipeline.png" />
         </div>
         <br/>
-        <!--/ Interpolating. -->
+      </div>
+    </div>
 
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
+
+    <div class="columns is-centered">
+
+      <!-- Zero-shot pixel alignment -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Zero-shot pixel alignment</h2>
+          <div class="interpolation-image-wrapper-zero-shot">
+            <img src="./static/images/pixel-aligned-feature-computation.png" />
+          </div>
           <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
+            For each image, the global (f<sub>G</sub>) and local (f<sub>L</sub>) features are fused to obtain our pixel-aligned features (f<sub>P</sub>). <i>Top-left</i>: We first compute cosine similarities between each local feature (f<sub>L</sub>) with the global feature (f<sub>G</sub>). <i>Top-right</i>: We compute an inter-feature similarity matrix, and compute the average similarity of each local feature to every other local feature, denoted φ̄<sub>i</sub> . <i>Bottom-left</i>: We combine these similarities to produce weights for fusing f<sub>G</sub> and f<sub>L</sub> to obtain pixel-aligned features f<sub>P</sub>.
           </p>
         </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
+      </div>
+      <!--/ Zero-shot pixel alignment -->
+
+      <!-- Long-tailed concepts -->
+      <div class="column">
+        <h2 class="title is-3">Retaining fine-grained concepts</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <div class="interpolation-image-wrapper-fine-grained">
+              <img src="./static/images/pixel-aligned-qualitative.png" />
+            </div>
+            <p>
+              Our approach to computing pixel-aligned features is adept at capturing long-tailed and fine-grained concepts. The plots to the right show the similarity scores between the embeddings of the cropped image regions corresponding to diet coke, lysol, and yogurt and their text embeddings, predicted by the base CLIP model used by LSeg and OpenSeg respectively. This implies that the base CLIP models know these concepts, yet, as can be seen on the tiled plots (center), LSeg and OpenSeg are not able to retrieve these concepts; they forget the concepts when finetuned. On the other hand, our zero-shot pixel-alignment approach does not suffer this drawback, and clearly delineates the corresponding pixels.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Long-tailed concepts -->
+
+
+    <div class="columns is-centered">
+
+      <!-- UnCoCo dataset -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">UnCoCo dataset</h2>
+          <div class="interpolation-image-wrapper-uncoco">
+            <img src="./static/images/uncoco.png" />
+          </div>
+          <p>
+            To evaluate long-tailed reasoning and multimodal reasoning abilities, since there is no existing dataset, we capture a set of 20 RGB-D sequences comprising 78 commonly found objects and annotate them with text, audio, click, and image queries. For each query, we also provide the corresponding ground truth 2D and 3D retrieval results. This image showcases sample tabletop scenes from UnCoCo (left) and the resulting 3D reconstructions and labels (right).
+          </p>
+        </div>
+      </div>
+      <!--/ UnCoCo dataset -->
+
+      <!-- 3D spatial reasoning -->
+      <div class="column">
+        <h2 class="title is-3">3D spatial reasoning</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="./static/images/spatial-query.png" />
+            <p>
+              <i>What is the distance between the refrigerator from the television?</i>
+            </p>
+            <p>
+              A key benefit of lifting foundation features to 3D is the ability to reason about spatial attributes. We implement a set of generic spatial relationship comparators that can be leveraged for querying arbitrary objects. We employ a large language model to parse the queries to generate function calls that can directly be executed. E.g., the query above parses to <tt>howFar(refrigirator, television)</tt>.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ 3D spatial reasoning -->
+
+    <!-- Long-form text queries -->    
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+
+        <!-- Interpolating. -->
+        <h2 class="title is-4">Long-form text queries</h2>
+        <div class="content has-text-justified">
+          <p>
+            ConceptFusion is able to handle long-form text queries and accurately localize objects referenced by the query. In the first two scenarios, OpenSeg is distracted by the presence of several confounding attributes. The third scenario shows a single world query (television) that is part of the COCO Captions dataset used to train OpenSeg, providing it an unfair advantage. ConceptFusion, nonetheless, accurately assigns the highest response to the map points representing the television. In each query, the referenced object is boldfaced.
+          </p>
+          <img src="./static/images/scannet-text-query.png" />
+        </div>
+        <br/>
+      </div>
+    </div>
+    <!--/ Long-form text queries -->
+
+    <!-- Click-query video -->    
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-4">Click-queries</h2>
+        <div class="content has-text-justified">
+          <p>
+            Click-queries over a sequence from the ICL dataset. For each clicked point, we compute the cosine similarity of the embedding at that point with that of every other map point and visualize them using a 'jet' colormap. Points in red indicate greatest similarity, while points in blue indicate least similarity. Notice the consistency in semantic concepts. For instance, when we click on a point on the corner lamp (at about 0:45), we also notice that the other corner lamp, as well as lights on top of the ceiling get high similarities assigned.
+          </p>
+          <video id="click-query-icl" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ICL Click query cropped.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <!--/ Re-rendering. -->
-
+        <br/>
       </div>
     </div>
-    <!--/ Animation. -->
+    <!--/ Click-query video -->
+
+  </div>
+</section>
 
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Experiments on real robotic systems</h2>
+    <div class="columns is-centered">
+
+      <!-- Tabletop rearrangement -->
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-3">Tabletop rearrangement</h3>
+          <div class="interpolation-image-wrapper-tabletop">
+            <img src="./static/images/rearrangement.png" />
+          </div>
+          <p>
+            The robot is provided with rearrangment goals involving novel objects. (Top row) push goldfish to the right of the yellow line, where goldfish refers to the brandname of the pack of Cheddar snack. (Bottom row) push baymax to the right of the yellow line, where baymax refers to the plush toy depicting the famous Disney character.
+          </p>
+        </div>
+      </div>
+      <!--/ Tabletop rearrangement -->
+
+      <!-- Self-driving -->
+      <div class="column">
+        <h3 class="title is-3">Autonomous driving</h3>
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="./static/images/driving.png" />
+            <p>
+              (Left to right; top to bottom) Autonomous drive-by-wire platform deployed; pointcloud map of the environment with the response to the openset text-query ”football field” (shown in red); path found to the football field (shown in red); car successfully navigates to the destination autonomously. See our anonymized webpage for more results.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Self-driving -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Integrating ConceptFusion with Large Language Models</h2>
+    <div class="columns is-centered">
+
+      <!-- GPT video 1 -->
+      <div class="column">
+        <div class="content">
+          <video id="gpt-video-1" autoplay controls muted playsinline height="100%">
+            <source src="./static/videos/gpt video.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ GPT video 1 -->
+
+      <!-- GPT video 2 -->
+      <div class="column">
+        <div class="content">
+          <video id="gpt-video-2" autoplay controls muted playsinline height="100%">
+            <source src="./static/videos/gpt video2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ GPT video 2 -->
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="concurrent work">
+  <div class="container is-max-desktop content">
     <!-- Concurrent Work. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
+        <h2 class="title is-3">Concurrent work</h2>
 
         <div class="content has-text-justified">
           <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
+            Given the pace of AI research these days, it is extremely challenging to keep up with all of the work around foundation models and open-set perception. We list below a few key approaches that we have come across after beginning work on ConceptFusion. If we may have inadvertently missed out on key concurrent work, please reach out to us over email (or better, open a pull request on <a href="https://github.com/concept-fusion/concept-fusion.github.io">our GitHub page</a>).
           </p>
           <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+            <a href="https://mahis.life/clip-fields/">CLIP-Fields</a> encodes features from language and vision-language models into a compact, scene-specific neural network trained to predict feature embeddings from 3D point coordinates; to enable open-set visual understanding tasks.
           </p>
           <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
+            <a href="https://pengsongyou.github.io/openscene">OpenScene</a> demonstrates that features from pixel-aligned 2D vision-language models can be distilled to 3D, generalize to new scenes, and perform better than their 2D counterparts.
           </p>
           <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
+            <a href="https://arxiv.org/abs/2211.16312">Deng et al.</a> demonstrate interesting ways of learning hierarchical scene abstractions by distilling features from 2D vision-language foundation models, and smart ways of interpreting captions from 2D captioning approaches.
           </p>
           <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+            <a href="https://makezur.github.io/FeatureRealisticFusion/">Feature-realistic neural fusion</a> demonstrates the integration of DINO features into a real-time neural mapping and positioning system.
+          </p>
+          <p>
+            <a href="https://semantic-abstraction.cs.columbia.edu">Semantic Abstraction</a> uses CLIP features to generate 3D features for reasoning over long-tailed categories, for scene completion and detecting occluded objects from language.
+          <p>
+            <a href="https://say-can.github.io/">Say-Can</a> demonstrates the applicability of large language models as task-planners, and leverage a set of low-level skills to execute these plans in the real world. Also related to this line of work are <a href="https://vlmaps.github.io/">VL-Maps</a>, <a href="https://nlmap-saycan.github.io/">NLMap-SayCan</a>, and <a href="https://cow.cs.columbia.edu/">CoWs</a>, which demonstrate the benefits of having a map queryable via language.
+          </p>
+          <p>
+            <a href="lerf.io">Language embedded radiance fields (LERF)</a> trains a NeRF that additionally encodes CLIP and DINO features for language-based concept retrieval.
+          </p>
+          <p>
+            <a href="https://vis-www.cs.umass.edu/3d-clr/">3D concept learning from multi-view images (3D-CLR)</a> introduces a dataset for 3D multi-view visual question answering, and proposes a concept learning framework that leverages pixel-aligned language embeddings from LSeg. They additionally train a set of neurosymbolic reasoning modules that loosely inspire our spatial query modules.
           </p>
         </div>
       </div>
@@ -441,14 +588,30 @@
 </section>
 
 
+<script type="text/javascript">
+  $(function() {
+  var screenWidth = $(window).width();
+  if (screenWidth >= 800) {
+    $('#gpt-video-1').attr('autoplay', 'autoplay');
+  }
+  if (screenWidth >= 800) {
+    $('#gpt-video-2').attr('autoplay', 'autoplay');
+  }
+  if (screenWidth >= 800) {
+    $('#click-query-icl').attr('autoplay', 'autoplay');
+  }
+});
+</script>
+
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{conceptfusion,
+  author    = {Jatavallabhula, {Krishna Murthy} and Kuwajerwala, Alihusein and Gu, Qiao and Omama, Mohd and Chen, Tao and Li, Shuang and Iyer, Ganesh and Saryazdi, Soroush and Keetha, Nikhil and Tewari, Ayush and Tenenbaum, {Joshua B.} and {de Melo}, {Celso Miguel} and Krishna, Madhava and Paull, Liam and Shkurti, Florian and Torralba, Antonio},
+  title     = {ConceptFusion: Open-set Multimodal 3D Mapping},
+  journal   = {Robotics: Science and Systems (RSS)},
+  year      = {2023},
 }</code></pre>
   </div>
 </section>
@@ -458,27 +621,26 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+         href="./assets/pdf/2023-ConceptFusion.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/concept-fusion" class="external-link" disabled>
         <i class="fab fa-github"></i>
+      </a>
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
       </a>
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This website adapted from the Nerfies templates, which is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            This means you are free to borrow the <a href="https://github.com/concept-fusion/concept-fusion.github.io">source code</a> of this website,
+            we just ask that you link back to the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies source code</a> in the footer.
+            Please remember to remove the analytics code included in the header of the website which you do not want on your website.
           </p>
         </div>
       </div>
