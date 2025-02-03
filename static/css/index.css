@@ -7,6 +7,12 @@ body {
   margin: 0 auto; /* Center the container */
 }
 
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .footer .icon-link {
     font-size: 25px;
     color: #000;
