@@ -2,13 +2,8 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-.container.is-max-desktop {
-  width: 60%;
-  margin: 0 auto; /* Center the container */
-}
-
 body {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }
