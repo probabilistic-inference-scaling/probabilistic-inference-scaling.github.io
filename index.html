@@ -137,9 +137,22 @@
               <source src="assets/videos/inference_scaling.mp4" type="video/mp4" autoplay>
               Your browser does not support the video tag.
             </video>
+
+            <p style="text-align: center;"><strong>So what's wrong with current inference scaling methods?&nbsp;</strong></p>
+            <p style="text-align: center;">&nbsp;</p>
+            <p style="text-align: center;">Well, many current inference scaling methods "guide" their search process with Process Reward Models - off-the-shelf models that take a problem and a (partial or complete) answer and return a reward score. These methods (beam search, DVTS, etc) take the "top-N" options at every step and explore these.&nbsp;</p>
+            <p style="text-align: center;">&nbsp;</p>
+            <p style="text-align: center;">The problem, however, is that PRMs, as in the case of almost all Reward Models, are imperfect. They are often inadequate approximations of the ground truth, and following them leads to&nbsp;<em>Reward Hacking</em>,&nbsp;where the final output is optimized to score well according to the reward model but fails to be useful and/or correct.&nbsp;</p>
+            <p style="text-align: center;">&nbsp;</p>
+            <p style="text-align: center;">This is where our method comes in. We ask the following -&nbsp;</p>
+            <p style="text-align: center;">&nbsp;</p>
+            <p style="text-align: center;"><strong>can we propose&nbsp;inference-time scaling as a probabilistic inference task?&nbsp;</strong></p>
+            <p style="text-align: center;">&nbsp;</p>
+            <p style="text-align: center;">Below, you can see a video of how our method works.&nbsp;&nbsp;</p>
           </div>
         </div>
       </div>
+      
     </div>
     <!--/ inference scaling. -->
 
