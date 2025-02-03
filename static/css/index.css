@@ -2,6 +2,10 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.container.is-max-desktop {
+  width: 60%;
+  margin: 0 auto; /* Center the container */
+}
 
 .footer .icon-link {
     font-size: 25px;
