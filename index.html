@@ -106,11 +106,27 @@
 </section>
 
 
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <img src="assets/videos/process_gif.gif" alt="Process visualization" style="width: 100%; max-width: 800px; margin: 0 auto; display: block;">
       </div>
+    </div> -->
+
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Our Method</h2>
+        <img src="assets/images/particle_filtering_figures-cropped.jpg" alt="Particle Filtering Process" style="width: 100%; margin: 20px auto; display: block;">
+
+        <div class="publication-video">
+          <video width="1120" height="630" controls style="margin: 0 auto; display: block; border: 2px solid black;">
+            <source src="assets/videos/process_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+      </div>
     </div>
+
+
 
 
 
@@ -152,14 +168,10 @@
               <p style="text-align: center;"><strong>So what's wrong with current inference scaling methods?&nbsp;</strong></p>
               <p style="text-align: center;">&nbsp;</p>
               <p style="text-align: center;">Well, many current inference scaling methods "guide" their search process with Process Reward Models - off-the-shelf models that take a problem and a (partial or complete) answer and return a reward score. These methods (beam search, DVTS, etc) take the "top-N" options at every step and explore these.&nbsp;</p>
-              <p style="text-align: center;">&nbsp;</p>
               <p style="text-align: center;">The problem, however, is that PRMs, as in the case of almost all Reward Models, are imperfect. They are often inadequate approximations of the ground truth, and following them leads to&nbsp;<em>Reward Hacking</em>,&nbsp;where the final output is optimized to score well according to the reward model but fails to be useful and/or correct.&nbsp;</p>
-              <p style="text-align: center;">&nbsp;</p>
-              <p style="text-align: center;">This is where our method comes in. We ask the following -&nbsp;</p>
-              <p style="text-align: center;">&nbsp;</p>
-              <p style="text-align: center;"><strong>can we propose&nbsp;inference-time scaling as a probabilistic inference task?&nbsp;</strong></p>
-              <p style="text-align: center;">&nbsp;</p>
-              <p style="text-align: center;">Below, you can see a video of how our method works.&nbsp;&nbsp;</p>
+              <p style="text-align: center;">This is where our method comes in. We ask the following -&nbsp;</p><br><br>
+              <p style="text-align: center; color: rgb(70, 10, 70);"><strong>can we propose inference-time scaling as a probabilistic inference task</strong></p>
+              <p style="text-align: center;">A video of our method is at the top of the page.</p>
             </div>
           </div>
         </div>
@@ -171,21 +183,18 @@
 
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Our Method</h2>
         <img src="assets/images/particle_filtering_figures-cropped.jpg" alt="Particle Filtering Process" style="width: 100%; margin: 20px auto; display: block;">
 
         <div class="publication-video">
-          <!-- Original YouTube embed
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Mja_qM_-jsg?si=uwfF26Zhwmvzib6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          -->
           <video width="1120" height="630" controls style="margin: 0 auto; display: block; border: 2px solid black;">
             <source src="assets/videos/process_video.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
 
   </div>
