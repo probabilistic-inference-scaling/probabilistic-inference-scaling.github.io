@@ -171,8 +171,7 @@
               <p style="text-align: center;">Well, many current inference scaling methods "guide" their search process with Process Reward Models - off-the-shelf models that take a problem and a (partial or complete) answer and return a reward score. These methods (beam search, DVTS, etc) take the "top-N" options at every step and explore these.&nbsp;</p>
               <p style="text-align: center;">The problem, however, is that PRMs, as in the case of almost all Reward Models, are imperfect. They are often inadequate approximations of the ground truth, and following them leads to&nbsp;<em>Reward Hacking</em>,&nbsp;where the final output is optimized to score well according to the reward model but fails to be useful and/or correct.&nbsp;</p>
               <p style="text-align: center;">This is where our method comes in. We ask the following -&nbsp;</p>
-              <p style="text-align: center; color: rgb(31, 5, 31);"><strong>can we propose inference-time scaling as a probabilistic inference task?</strong></p>
-              <p style="text-align: center;">Graphics explaining the process are below. A video detailing the method is at the top of the page.</p>
+              <p style="text-align: center; color: rgb(56, 10, 56);"><strong>can we propose inference-time scaling as a probabilistic inference task?</strong></p>
             </div>
           </div>
         </div>
@@ -199,6 +198,7 @@
       <div class="column is-four-fifths">
 
         <h2 class="title is-3">Our Method</h2>
+        <p>Graphics explaining the process are below. A video detailing the method is at the top of the page.</p>
         <div class="content has-text-justified">
           <img src="assets/images/process_video_cover.jpg" alt="Process Overview" style="width: 100%; display: block; margin: 20px auto;">
 
@@ -220,13 +220,13 @@
         <h2 class="title is-3">Our Results</h2>
         <div class="content has-text-justified">
           <p>
-            <h5>Our experimental results demonstrate the effectiveness of our probabilistic inference approach to inference-time scaling. The plots below show how our particle-based Monte Carlo methods achieve the following improvements: <br>
+            <h6>Our experimental results demonstrate the effectiveness of our probabilistic inference approach to inference-time scaling. The plots below show how our particle-based Monte Carlo methods achieve the following improvements: <br>
               <br>
               • <strong>4-16x better scaling rate compared to deterministic search methods on challenging mathematical reasoning tasks</strong> <br>
               • <strong>Qwen2.5-Math-1.5B-Instruct surpasses GPT-4o accuracy with only 4 rollouts</strong> <br>
               • <strong>Qwen2.5-Math-7B-Instruct achieves o1 level accuracy with only 32 rollouts</strong> <br>
               <br>
-              These results highlight the efficiency and practicality of our method for real-world applications!</h5>          </p>
+              These results highlight the efficiency and practicality of our method for real-world applications!</h6>          </p>
           <style>
             .image-container {
               display: flex;
