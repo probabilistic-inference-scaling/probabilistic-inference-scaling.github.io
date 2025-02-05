@@ -131,7 +131,7 @@
   </div>
 
 
-
+  <br><br>
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -168,16 +168,11 @@
             <hr style="border-top: 1px solid #ddd; margin: 20px 0;">
             <div style="background-color: #f5f5f5; border-radius: 10px; padding: 20px;">
               <p style="text-align: center;"><strong>So what's wrong with current inference scaling methods?&nbsp;</strong></p>
-              <p style="text-align: center;">&nbsp;</p>
               <p style="text-align: center;">Well, many current inference scaling methods "guide" their search process with Process Reward Models - off-the-shelf models that take a problem and a (partial or complete) answer and return a reward score. These methods (beam search, DVTS, etc) take the "top-N" options at every step and explore these.&nbsp;</p>
-              <p style="text-align: center;">&nbsp;</p>
               <p style="text-align: center;">The problem, however, is that PRMs, as in the case of almost all Reward Models, are imperfect. They are often inadequate approximations of the ground truth, and following them leads to&nbsp;<em>Reward Hacking</em>,&nbsp;where the final output is optimized to score well according to the reward model but fails to be useful and/or correct.&nbsp;</p>
-              <p style="text-align: center;">&nbsp;</p>
               <p style="text-align: center;">This is where our method comes in. We ask the following -&nbsp;</p>
-              <p style="text-align: center;">&nbsp;</p>
-              <p style="text-align: center;"><strong>can we propose&nbsp;inference-time scaling as a probabilistic inference task?&nbsp;</strong></p>
-              <p style="text-align: center;">&nbsp;</p>
-              <p style="text-align: center;">Below, you can see a video of how our method works.&nbsp;&nbsp;</p>
+              <p style="text-align: center; color: rgb(31, 5, 31);"><strong>can we propose inference-time scaling as a probabilistic inference task?</strong></p>
+              <p style="text-align: center;">Graphics explaining the process are below. A video detailing the method is at the top of the page.</p>
             </div>
           </div>
         </div>
@@ -192,6 +187,25 @@
     
     <!--/ Paper video. -->
 
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+
+        <h2 class="title is-3">Our Method</h2>
+        <div class="content has-text-justified">
+          <img src="assets/images/process_video_cover.jpg" alt="Process Overview" style="width: 100%; display: block; margin: 20px auto;">
+
+          <img src="assets/images/particle_filtering_figures-cropped.jpg" alt="Process Overview" style="width: 100%; display: block; margin: 20px auto;">
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
