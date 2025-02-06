@@ -255,10 +255,16 @@
               z-index: 1;
             }
           </style>
-            <img class="zoom-image" src="assets/images/results_table.png" alt="Results Table" style="width: 75%; display: block; margin: 20px auto;">
-            <img class="zoom-image" src="assets/images/main_plot_llama_1b.jpg" alt="Result 1" style="width: 75%; display: block; margin: 20px auto;">
-            <img class="zoom-image" src="assets/images/main_plot_llama_8b.jpg" alt="Result 2" style="width: 75%; display: block; margin: 20px auto;">
-            <img class="zoom-image" src="assets/images/main_plot_qwen_7b_page-0001.jpg" alt="Result 3" style="width: 75%; display: block; margin: 20px auto;">
+            <div style="display: flex; justify-content: space-between;">
+              <div style="width: 48%;">
+                <img class="zoom-image" src="assets/images/results_table.png" alt="Results Table" style="width: 100%; height: 100%; object-fit: contain;">
+              </div>
+              <div style="width: 48%; display: flex; flex-direction: column; justify-content: space-between;">
+                <img class="zoom-image" src="assets/images/main_plot_llama_1b.jpg" alt="Result 1" style="width: 100%; height: 32%;">
+                <img class="zoom-image" src="assets/images/main_plot_llama_8b.jpg" alt="Result 2" style="width: 100%; height: 32%;">
+                <img class="zoom-image" src="assets/images/main_plot_qwen_7b_page-0001.jpg" alt="Result 3" style="width: 100%; height: 32%;">
+              </div>
+            </div>
         </div>
       </div>
     </div>
