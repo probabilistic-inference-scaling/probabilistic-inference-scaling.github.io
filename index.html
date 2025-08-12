@@ -181,7 +181,7 @@
 
   <br><br>
     <!-- Talks. -->
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered" style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Talks</h2>
         <div class="content has-text-justified">
@@ -191,14 +191,14 @@
                 <ul>
                   <li>RedHat Seminar Series (2/07/2025)</li>
                   <li>IBM Research (2/20/2025)</li>
-                  <li>MIT Embodied Intelligence Seminar (4/09/2025)</li>
+                  <li>MIT Embodied Intelligence (4/09/2025)</li>
                 </ul>
               </div>
               <div class="column">
                 <ul>
                   <li>University of Cambridge (6/11/2025)</li>
                   <li>Cohere AI (7/10/2025)</li>
-                  <li>Stanford University (coming soon)</li>
+                  <li>Stanford University (8/12/2025)</li>
                 </ul>
               </div>
             </div>
@@ -213,12 +213,22 @@
     <br>
     <br>
 
+    <h2 class="title is-3 has-text-centered">Slides</h2>
 
+    <div style="width: 100%; height: 600px; overflow: auto; border: 1px solid #ccc; margin: 20px 0; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
+      <iframe 
+          src="assets/pdf/pf_inference_scale_talk_updated.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+          style="width: 100%; height: 100%;" 
+          frameborder="0" 
+          oncontextmenu="return false;">
+      </iframe>
+  </div>
+  
 
 
   <br><br>
     <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered" style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
@@ -241,7 +251,7 @@
 
 
     <!-- inference scaling. -->
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered" style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Wait so ... what is inference-time scaling?</h2>
         <div class="content has-text-justified">
@@ -256,14 +266,23 @@
                 Your browser does not support the video tag.
               </video>
             <hr style="border-top: 1px solid #ddd; margin: 20px 0;">
-            <div style="background-color: #f5f5f5; border-radius: 10px; padding: 20px;">
-              <p style="text-align: center;"><strong>So what's wrong with current inference scaling methods?&nbsp;</strong></p>
-              <p style="text-align: center;">Well, many current inference scaling methods "guide" their search process with Process Reward Models - off-the-shelf models that take a problem and a (partial or complete) answer and return a reward score. These methods (beam search, DVTS, etc) take the "top-N" options at every step and explore these.&nbsp;</p>
-              <p style="text-align: center;">The problem, however, is that PRMs, as in the case of almost all Reward Models, are imperfect. They are often inadequate approximations of the ground truth, and following them leads to&nbsp;<em>Reward Hacking</em>,&nbsp;where the final output is optimized to score well according to the reward model but fails to be useful and/or correct.&nbsp;</p>
-              <p style="text-align: center;">This is where our method comes in. We ask the following -&nbsp;</p>
-              <p style="text-align: center; color: rgb(56, 10, 56);"><strong>can we propose inference-time scaling as a probabilistic inference task?</strong></p>
-            </div>
-          </div>
+            
+            <section class="section" style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
+              <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                  <div class="column is-four-fifths">
+                    <h2 class="title is-3">Challenges with Current Inference Scaling Methods</h2>
+                    <div class="content has-text-justified" style="background-color: #f5f5f5; border-radius: 10px; padding: 20px;">
+                      <p>Many current inference scaling methods "guide" their search process with Process Reward Models - off-the-shelf models that take a problem and a (partial or complete) answer and return a reward score. These methods (beam search, DVTS, etc) take the "top-N" options at every step and explore these.</p>
+                      <p>The problem, however, is that PRMs, as in the case of almost all Reward Models, are imperfect. They are often inadequate approximations of the ground truth, and following them leads to <em>Reward Hacking</em>, where the final output is optimized to score well according to the reward model but fails to be useful and/or correct.</p>
+                      <img src="assets/images/early pruning.001.jpeg" alt="Early Pruning" style="width: 100%; display: block; margin: 20px auto;">
+                      <p>This is where our method comes in. We ask the following -</p>
+                      <p style="color: rgb(56, 10, 56);"><strong>Can we propose inference-time scaling as a probabilistic search task?</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
         </div>
       </div>
       
@@ -282,7 +301,7 @@
 
 
 
-<section class="section">
+<section class="section" style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -291,9 +310,8 @@
         <p>Graphics explaining the process are below. A video detailing the method is at the top of the page.</p>
         <div class="content has-text-justified">
 
-          <img src="assets/images/particle_filtering_figures-cropped.jpg" alt="Process Overview" style="width: 100%; display: block; margin: 20px auto;">
 
-          <img src="assets/images/process_video_cover.jpg" alt="Process Overview" style="width: 100%; display: block; margin: 20px auto;">
+          <img src="assets/images/pf_graphic_process.jpeg" alt="Process Overview" style="width: 100%; display: block; margin: 20px auto;">
 
           
         </div>
@@ -307,7 +325,7 @@
 
 
 
-<section class="section">
+<section class="section" style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -374,7 +392,7 @@
 </script>
 
 
-<section class="section" id="BibTeX">
+<section class="section" id="BibTeX" style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre style="background-color: #bbb9b98b; padding: 15px; border-radius: 5px;"><code>@misc{puri2025probabilisticinferenceapproachinferencetime,
@@ -390,7 +408,7 @@
 </section>
 
 
-<footer class="footer">
+<footer class="footer" style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
